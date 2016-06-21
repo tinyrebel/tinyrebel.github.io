@@ -340,7 +340,7 @@ a:hover {
 	}
 
     .nav {
-		width: 85%;
+		width: 90%;
 		padding-top: 30px;
 	}
 
@@ -359,14 +359,14 @@ a:hover {
 	}
 
 	 .grayscale {
-	filter: grayscale(0%);
-	-webkit-filter: grayscale(0%);
+		filter: grayscale(0%);
+		-webkit-filter: grayscale(0%);
 	}
 
 	.galleryLabel {
+		opacity: 1;
 		margin: 30px;
 		margin-top: 15px;
-		opacity: 1;
 	}
 
 	.galleryLabel h1 {
@@ -383,6 +383,7 @@ a:hover {
 	}
 
 	.projectLabel {
+		opacity: 1;
 		margin: 45px;
 		margin-top: 30px;
 	}
