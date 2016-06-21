@@ -182,7 +182,8 @@ a:hover {
 }
 
 .footer img {
-	min-height: 13px;
+	width: 50px;
+	height: auto;
 	padding-top: 40px;
 }
 
@@ -448,6 +449,11 @@ a:hover {
 		letter-spacing: 1px;
 		background-color: rgba(255,255,255,0.5);
 		padding: 8px;
+	}
+
+	.footer img {
+		width: 25px;
+		height: auto;
 	}
         
 }	
