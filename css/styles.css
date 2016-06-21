@@ -341,14 +341,14 @@ a:hover {
 
     .nav {
 		width: 83%;
-		padding-top: 35px;
+		padding-top: 33px;
 		float:right;
 	}
 
 	.nav a
 	{
 	  	margin-left: 11px;
-		font-size: 13px;
+		font-size: 12px;
 	}
 
 	.bigImg{
@@ -387,11 +387,14 @@ a:hover {
 		opacity: 1;
 		margin: 45px;
 		margin-top: 30px;
+		background-color: rgba(255,255,255,0);
 	}
 
 	.projectLabel h1 {
 		font-size: 13px;
 		letter-spacing: 1px;
+		background-color: rgba(255,255,255,0.5);
+		padding: 8px;
 	}
         
     }
