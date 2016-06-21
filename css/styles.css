@@ -91,7 +91,7 @@ a:hover {
 	-webkit-filter: grayscale(0%);
 }
 
-.gallery:focus .grayscale {
+.galleryType:focus .grayscale {
 	filter: grayscale(0%);
 	-webkit-filter: grayscale(0%);
 }
@@ -126,7 +126,7 @@ a:hover {
 	opacity: 1;
 }
 
-.gallery:focus .galleryLabel {
+.galleryType:focus .galleryLabel {
 	opacity: 1;
 }
 
