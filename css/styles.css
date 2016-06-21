@@ -398,5 +398,9 @@ a:hover {
 		background-color: rgba(255,255,255,0.5);
 		padding: 8px;
 	}
+
+	.footer img {
+		min-height: 15px;
+	}
         
-    }
+}	
