@@ -451,8 +451,13 @@ a:hover {
 		padding: 8px;
 	}
 
+	.footer p {
+		font-size: 8px;
+		padding-top: 45px;
+	}
+
 	.footer img {
-		width: 25px;
+		width: 30px;
 		height: auto;
 	}
         
