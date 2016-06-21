@@ -340,7 +340,7 @@ a:hover {
 	}
 
     .nav {
-		width: 80%;
+		width: 85%;
 		padding-top: 30px;
 	}
 
@@ -358,7 +358,7 @@ a:hover {
 		margin-top: -4%;
 	}
 
-	.gallery:focus .grayscale, .gallery:active .grayscale {
+	 .grayscale {
 	filter: grayscale(0%);
 	-webkit-filter: grayscale(0%);
 	}
@@ -366,15 +366,12 @@ a:hover {
 	.galleryLabel {
 		margin: 30px;
 		margin-top: 15px;
+		opacity: 1;
 	}
 
 	.galleryLabel h1 {
 		font-size: 11px;
 		letter-spacing: 1px;
-	}
-
-	.gallery:focus .galleryLabel, .gallery:active .galleryLabel  {
-	opacity: 1;
 	}
 
 	.banner{
