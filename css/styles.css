@@ -405,10 +405,10 @@ a:hover {
 		margin-top: -4%;
 	}
 
-	 /*.grayscale {
+	.grayscale {
 		filter: grayscale(0%);
 		-webkit-filter: grayscale(0%);
-	}*/
+	}
 
 	.galleryLabel {
 		/*margin: 25px;
@@ -437,11 +437,13 @@ a:hover {
 
 	.projectLabel {
 		opacity: 1;
-		margin: 20px;
+		margin: 0;
+		margin-top: 0;
 		background-color: rgba(255,255,255,0);
 	}
 
 	.projectLabel h1 {
+		margin-top: 0;
 		font-size: 13px;
 		letter-spacing: 1px;
 		background-color: rgba(255,255,255,0.5);
