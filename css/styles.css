@@ -334,7 +334,7 @@ a:hover {
     @media only screen and (max-width : 320px) {
 
     .header img {
-    	margin-top: 7px;
+    	margin-top: 14px;
 		max-width: 40px;
 
 	}
@@ -358,10 +358,10 @@ a:hover {
 		margin-top: -4%;
 	}
 
-	.gallery:focus .grayscale {
+	.gallery:focus .grayscale, .gallery:active .grayscale {
 	filter: grayscale(0%);
 	-webkit-filter: grayscale(0%);
-}
+	}
 
 	.galleryLabel {
 		margin: 30px;
@@ -373,7 +373,7 @@ a:hover {
 		letter-spacing: 1px;
 	}
 
-	.gallery:focus .galleryLabel {
+	.gallery:focus .galleryLabel, .gallery:active .galleryLabel  {
 	opacity: 1;
 	}
 
