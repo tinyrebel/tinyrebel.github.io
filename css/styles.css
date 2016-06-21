@@ -198,10 +198,49 @@ a:hover {
 /* Large Devices, Wide Screens - Effects elements with col-md-* */
 @media only screen and (max-width : 1200px) {
 
+	.bigImg img {
+		margin-top: -14%;
+	}
+
+	.galleryLabel h1 {
+		font-size: 16px;
+	}
+
+	.banner img{
+		margin-top: -15%;
+	}
+
 }
 
 /* Medium Devices, Desktops - Effects elements with col-sm-* */
 @media only screen and (max-width : 992px) {
+
+	.bigImg img {
+		margin-top: -10%;
+	}
+
+	.galleryLabel {
+		margin: 30px;
+		margin-top: 15px;
+	}
+
+	.galleryLabel h1 {
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+
+	.banner img{
+		margin-top: -10%;
+	}
+
+	.projectLabel {
+		margin: 45px;
+		margin-top: 30px;
+	}
+
+	.projectLabel h1 {
+		font-size: 16px;
+	}
 
 }
 
@@ -218,19 +257,18 @@ a:hover {
 	}
 
 	.bigImg{
-		height: 400px;
+		height: 300px;
 	}
 
-	.bigImg img {
-		position: relative;
-		margin-top: 0;
+	.galleryLabel {
+		margin: 40px;
+		margin-top: 25px;
 	}
 
 	.galleryLabel h1 {
-	font-size: 13px;
-	letter-spacing: 1px;
-	margin-top: 70%;
-}
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
 
 	.banner{
 		height: 200px;
@@ -238,6 +276,15 @@ a:hover {
 
 	.banner img{
 		margin-top: -15%;
+	}
+
+	.projectLabel {
+		margin: 60px;
+		margin-top: 45px;
+	}
+
+	.projectLabel h1 {
+		font-size: 20px;
 	}
 
 }
@@ -257,11 +304,11 @@ a:hover {
 	}
 
 	.bigImg{
-		height: 250px;
+		height: 240px;
 	}
 
 	.bigImg img {
-		margin-top: 0;
+		margin-top: -4%;
 	}
 
 	.banner{
@@ -272,5 +319,80 @@ a:hover {
 		margin-top: -7%;
 	}
 
+	.projectLabel {
+		margin: 45px;
+		margin-top: 30px;
+	}
+
+	.projectLabel h1 {
+		font-size: 16px;
+	}
 
 }
+
+/* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+
+    .header img {
+    	margin-top: 7px;
+		max-width: 40px;
+
+	}
+
+    .nav {
+		width: 80%;
+		padding-top: 30px;
+	}
+
+	.nav a
+	{
+	  	margin-left: 13px;
+		font-size: 13px;
+	}
+
+	.bigImg{
+		height: 200px;
+	}
+
+	.bigImg img {
+		margin-top: -4%;
+	}
+
+	.gallery:focus .grayscale {
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+}
+
+	.galleryLabel {
+		margin: 30px;
+		margin-top: 15px;
+	}
+
+	.galleryLabel h1 {
+		font-size: 11px;
+		letter-spacing: 1px;
+	}
+
+	.gallery:focus .galleryLabel {
+	opacity: 1;
+	}
+
+	.banner{
+		height: 140px;
+	}
+
+	.banner img{
+		margin-top: -7%;
+	}
+
+	.projectLabel {
+		margin: 45px;
+		margin-top: 30px;
+	}
+
+	.projectLabel h1 {
+		font-size: 13px;
+		letter-spacing: 1px;
+	}
+        
+    }
