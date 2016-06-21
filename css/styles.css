@@ -341,14 +341,14 @@ a:hover {
 
     .nav {
 		width: 83%;
-		padding-top: 30px;
+		padding-top: 35px;
 		float:right;
 	}
 
 	.nav a
 	{
-	  	margin-left: 11px;
-		font-size: 12px;
+	  	margin-left: 13px;
+		font-size: 13px;
 	}
 
 	.bigImg{
