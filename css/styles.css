@@ -341,13 +341,13 @@ a:hover {
 
     .nav {
     	position: absolute;
-		width: 90%;
+		width: 87%;
 		padding-top: 30px;
 	}
 
 	.nav a
 	{
-	  	margin-left: 13px;
+	  	margin-left: 12px;
 		font-size: 13px;
 	}
 
