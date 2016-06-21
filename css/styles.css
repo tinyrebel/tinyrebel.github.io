@@ -91,6 +91,11 @@ a:hover {
 	-webkit-filter: grayscale(0%);
 }
 
+.gallery:focus .grayscale {
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
+}
+
 .galleryLabel {
 	position: absolute;
 	top: 0;
@@ -118,6 +123,10 @@ a:hover {
 }
 
 .gallery:hover .galleryLabel {
+	opacity: 1;
+}
+
+.gallery:focus .galleryLabel {
 	opacity: 1;
 }
 
@@ -400,23 +409,25 @@ a:hover {
 		margin-top: -4%;
 	}
 
-	 .grayscale {
+	 /*.grayscale {
 		filter: grayscale(0%);
 		-webkit-filter: grayscale(0%);
-	}
+	}*/
 
 	.galleryLabel {
-		opacity: 1;
+		margin: 25px;
+		margin-top: 10px;
+		/*opacity: 1;
 		margin: 10px;
 		margin-top: 0px;
-		background-color: rgba(255,255,255,0);
+		background-color: rgba(255,255,255,0);*/
 	}
 
 	.galleryLabel h1 {
 		font-size: 11px;
 		letter-spacing: 1px;
-		background-color: rgba(255,255,255,0.5);
-		padding: 8px;
+		/*background-color: rgba(255,255,255,0.5);
+		padding: 8px;*/
 	}
 
 	.banner{
