@@ -177,8 +177,8 @@ a:hover {
 }
 
 .footer img {
-	min-height: 25px;
-	padding-top: 30px;
+	min-height: 13px;
+	padding-top: 40px;
 }
 
 .footer p {
@@ -438,11 +438,6 @@ a:hover {
 		letter-spacing: 1px;
 		background-color: rgba(255,255,255,0.5);
 		padding: 8px;
-	}
-
-	.footer img {
-		height: 15px;
-		width: auto;
 	}
         
 }	
