@@ -193,6 +193,37 @@ a:hover {
 
 }
 
+.first {
+	margin-top: 110px;
+}
+
+.project-main {
+	margin-bottom: 30px;
+}
+
+.fillscreen {
+	width: 100%;
+	height: auto;
+}
+
+.project-square {
+	margin-bottom: 30px;
+}
+
+.project-square h2 {
+	text-transform: uppercase;
+	font-size: 20px;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #000;
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+.project-square p {
+	font-size: 11px;
+}
+
 /*mdia queries*/
 
 /* Large Devices, Wide Screens - Effects elements with col-md-* */
@@ -285,6 +316,16 @@ a:hover {
 
 	.projectLabel h1 {
 		font-size: 20px;
+	}
+
+	.project-square h2 {
+		font-size: 18px;
+		padding-top: 0px;
+		padding-bottom: 15px;
+	}
+
+	.project-square img {
+		padding-top: 30px;
 	}
 
 }
@@ -400,7 +441,8 @@ a:hover {
 	}
 
 	.footer img {
-		min-height: 15px;
+		height: 15px;
+		width: auto;
 	}
         
 }	
