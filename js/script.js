@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+//header resize on scroll
 	$(window).scroll(function(){
 	  if ($(window).scrollTop() >= 125) {
 	    $('.header').addClass('fixed');
@@ -9,6 +10,7 @@ $(document).ready(function(){
 	   }
 	});
 
+//slick image carousel plugin
 	$('.single-item').slick({
     	 dots: true,
     	 infinite: true,
