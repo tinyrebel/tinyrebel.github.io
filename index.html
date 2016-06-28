@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
   <title>Morgan Leber | Portfolio</title>
   <!-- Interactive Media: Web - Final Website: Portfolio - Morgan Leber - 2521821-->
 </head>
@@ -23,7 +23,7 @@
 			<ul>
 			<li> <a href="index.html">Contact</a> </li>
 			<li> <a href="index.html">About</a> </li>
-			<li> <a href="index.html">Home</a> </li>
+			<li class="left-none"> <a href="index.html" class="left-none">Home</a> </li>
 			</ul>
 		</div>
 		<!--navigation end-->
@@ -33,9 +33,11 @@
 
 <!--banner img start-->
 <div class="bigImg">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
-			<img src="images/jumbotron.jpg" class="img-responsive">
+			<div class="col-xs-6 col-xs-push-6 col-sm-6 col-sm-push-6 col-md-5 col-md-push-7 col-lg-4 col-lg-push-8">
+				<div class="bannerHover"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <a href="projectOne.html">project</a></p></div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -68,32 +70,35 @@
 <div class="banner">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">				
-				<img src="images/banner.jpg" class="img-responsive">
+			<div class="col-xs-12">
+				<div class="col-xs-6 col-sm-6 col-md-5 col-lg-4 ">
+					<div class="bannerHoverSmall"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="project.html">project</a></p></div>
+				</div>
+				<img src="images/banner.png" class="img-responsive">
 			</div>
 		</div>
 	</div>
 </div>
 
 <div class="projectType">
-<div class="container">
+	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 project">
 				<a href="project.html">
-				<div class="projectLabel"> <h1>typeface design</h1></div>
-				<img src="images/project1.jpg" class="img-responsive"></a>
+				<img src="images/project1.jpg" class="img-responsive grayscale">
+				<div class="projectLabel"> <h1>typeface design</h1></div></a>
 			</div>
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 project">
+				<img src="images/project2.png" class="img-responsive grayscale">
 				<div class="projectLabel"> <h1>typography</h1></div>
-				<img src="images/project2.png" class="img-responsive">
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 project">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 project ">
+				<img src="images/project3.jpg" class="img-responsive grayscale">
 				<div class="projectLabel"> <h1>printmaking</h1></div>
-				<img src="images/project3.jpg" class="img-responsive">
 			</div>
-			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 project">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 project ">
+				<img src="images/project4.jpg" class="img-responsive grayscale">
 				<div class="projectLabel"> <h1>book</h1></div>
-				<img src="images/project4.jpg" class="img-responsive">
 			</div>
 		</div>
 	</div>

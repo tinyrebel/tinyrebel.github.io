@@ -1,6 +1,7 @@
-
+/* basic type settings */
 body {
 	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 }
 
 a {
@@ -9,21 +10,34 @@ a {
 
 a:hover {
 	text-decoration: none;
-	color: #707070;
+	color: #828282;
 }
 
+/* header and navigation */
 .header {
 	width: 100%;
-	height: 80px;
+	height: 120px;
 	background-color: #f8f8f8;
+	padding-top: 20px;
 	position: fixed;
 	top: 0;
 	z-index: 9999; /*fixed header*/
+
+	-webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 .header img {
-	margin-top: 7px;
-	max-height: 65px;
+	margin-top: -10px;
+	max-height: 100px;
+	-webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 .nav
@@ -49,21 +63,59 @@ a:hover {
 	font-size: 18px;
 	letter-spacing: 1px;
 }
-	
 
+.left-none {
+	margin-left: -10px;
+}
+	
+/* full screen width image banner*/
 .bigImg{
-	margin-top: 80px;
-	width:100%;
+	margin-top: 120px;
 	height: 450px;
-	overflow:hidden;
 	margin-bottom: 30px;
+	background-image: url(../images/jumbotron.jpg); 
+	background-position: center center;
+	background-size: cover;
 }
 
-.bigImg img {
+/*.bigImg img {
 	position: relative;
 	margin-top: -20%;
+}*/
+
+.bannerHover {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	margin: 0 0 0 0;
+	transition:all .4s ease-in-out;  
+    -webkit-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
 }
 
+.bannerHover p {
+	font-size: 11px;
+	padding: 13px;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.bannerHover a {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+}
+
+.bigImg:hover .bannerHover {
+	margin: 30px 0 0 0;
+	opacity: 1;
+}
+
+/* images linking to gallery view */
 .galleryType {
 	overflow:hidden;
 	margin-bottom: 15px;
@@ -76,9 +128,10 @@ a:hover {
 	margin-bottom: 15px;
 }
 
+/* grayscale hover effect */
 .grayscale {
-	filter: grayscale(100%);
-	-webkit-filter: grayscale(100%);
+	filter: grayscale(0%);
+	-webkit-filter: grayscale(0%);
 
 	transition:all .4s ease-in-out;    
     -webkit-transition:all .4s ease-in-out;
@@ -87,15 +140,11 @@ a:hover {
 }
 
 .gallery:hover .grayscale {
-	filter: grayscale(0%);
-	-webkit-filter: grayscale(0%);
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
 }
 
-.galleryType:active .grayscale {
-	filter: grayscale(0%);
-	-webkit-filter: grayscale(0%);
-}
-
+/* text hover effect */
 .galleryLabel {
 	position: absolute;
 	top: 0;
@@ -103,7 +152,7 @@ a:hover {
 	left: 0;
 	bottom: 0;
 	opacity: 0;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.8);
 	margin: 40px;
 	margin-top: 25px;
 
@@ -126,24 +175,58 @@ a:hover {
 	opacity: 1;
 }
 
+/* banner image - without margins */
 .banner{
-	height: 300px;
-	overflow: hidden;
+	background-color: #b1ddea;
 	margin-bottom: 30px;
 }
 
 .banner img{
-	margin-top: -17%;
+	max-height: 350px;	
 }
 
+.bannerHoverSmall {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	margin: 0 0 0 0;
+	transition:all .4s ease-in-out;    
+    -webkit-transition:all .4s ease-in-out;
+    -o-transition:all .4s ease-in-out;
+    -moz-transition:all .4s ease-in-out;
+}
+
+.bannerHoverSmall p {
+	font-size: 11px;
+	padding: 13px;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.bannerHoverSmall a {
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 9px;
+	letter-spacing: 1px;
+}
+
+.banner:hover .bannerHoverSmall {
+	margin: 30px 0 0 0;
+	opacity: 1;
+}
+
+/* images linking to project view */
 .projectType{
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .projectType img {
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
+/* text hover effects */
 .projectLabel {
 	position: absolute;
 	top: 0;
@@ -151,7 +234,7 @@ a:hover {
 	left: 0;
 	bottom: 0;
 	opacity: 0;
-	background-color: rgba(255,255,255,0.5);
+	background-color: rgba(255,255,255,0.8);
 	margin: 60px;
 	margin-top: 45px;
 
@@ -176,6 +259,12 @@ a:hover {
 	opacity: 1;
 }
 
+.project:hover .grayscale {
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+/* footer */
 .footer {
 	height: 125px;
 	background-color: #f8f8f8;
@@ -199,8 +288,23 @@ a:hover {
 
 }
 
+/*fixed header css for jquery transiton */
+.fixed{
+	height: 80px;
+	position: fixed;
+	top: 0;
+	padding-top: 0;
+	z-index: 9999; /*fixed header*/
+}
+
+.fixed img {
+	margin-top: 7px;
+	max-height: 65px;
+}
+
+/* PROJECT PAGE */
 .first {
-	margin-top: 110px;
+	margin-top: 150px;
 }
 
 .project-main {
@@ -230,31 +334,59 @@ a:hover {
 	font-size: 11px;
 }
 
+/* PROJECT PAGE WITH SLIDER */
+/* changes to slick theme css - arrows */
+.slick-prev:before,
+.slick-next:before
+{
+    color: #fff;
+    opacity: 0.1;
+
+    transition:all .2s ease-in-out;    
+    -webkit-transition:all .2s ease-in-out;
+    -o-transition:all .2s ease-in-out;
+    -moz-transition:all .2s ease-in-out; 
+}
+
+.slick-prev
+{
+    left: 20px;
+    z-index: 999;
+}
+.slick-next
+{
+    right: 20px;
+}
+
+.single-item:hover .slick-prev:before, .single-item:hover .slick-next:before {
+	opacity: 0.75;
+}
+
+.single-item:hover .slick-prev:hover:before, .single-item:hover .slick-next:hover:before {
+	opacity: 1;
+}
+
+/* 'FAKE' GALLERY PAGE' */
+ .mockup {
+ 	margin-top: 120px;
+ 	margin-bottom: 30px;
+
+ }
+
+
 /*mdia queries*/
 
 /* Large Devices, Wide Screens - Effects elements with col-md-* */
 @media only screen and (max-width : 1200px) {
 
-	.bigImg img {
-		margin-top: -14%;
-	}
-
 	.galleryLabel h1 {
 		font-size: 16px;
-	}
-
-	.banner img{
-		margin-top: -15%;
 	}
 
 }
 
 /* Medium Devices, Desktops - Effects elements with col-sm-* */
 @media only screen and (max-width : 992px) {
-
-	.bigImg img {
-		margin-top: -10%;
-	}
 
 	.galleryLabel {
 		margin: 30px;
@@ -264,10 +396,6 @@ a:hover {
 	.galleryLabel h1 {
 		font-size: 13px;
 		letter-spacing: 1px;
-	}
-
-	.banner img{
-		margin-top: -10%;
 	}
 
 	.projectLabel {
@@ -284,6 +412,16 @@ a:hover {
 /* Small Devices, Tablets - Effects elements with col-xs-* */
 @media only screen and (max-width : 768px) {
 
+	.header img {
+		max-height: 80px;
+		margin-top: 0;
+	}
+
+	.fixed img {
+		margin-top: 7px;
+		max-height: 65px;
+	}
+
 	.nav {
 		padding-top: 30px;
 	}
@@ -297,6 +435,16 @@ a:hover {
 		height: 300px;
 	}
 
+
+	.bannerHover p{
+		font-size: 10px;
+	}
+
+	.banner:hover .bannerHover {
+		margin: 20px 0 0 0;
+	}
+
+	
 	.galleryLabel {
 		margin: 40px;
 		margin-top: 25px;
@@ -307,12 +455,12 @@ a:hover {
 		letter-spacing: 1px;
 	}
 
-	.banner{
-		height: 200px;
+	.bannerHoverSmall p{
+		font-size: 10px;
 	}
 
-	.banner img{
-		margin-top: -15%;
+	.banner:hover .bannerHoverSmall {
+		margin: 20px 0 0 0;
 	}
 
 	.projectLabel {
@@ -337,7 +485,7 @@ a:hover {
 }
 
 /* Extra Small Devices, Phones - Effects elements with col-xs-*, the smallest screens */ 
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 490px) {
 
 	.nav {
 		width: 80%;
@@ -354,16 +502,21 @@ a:hover {
 		height: 240px;
 	}
 
-	.bigImg img {
-		margin-top: -4%;
+	.bannerHover p{
+		font-size: 9px;
 	}
 
-	.banner{
-		height: 180px;
+	.bigImg:hover .bannerHover {
+		margin: 18px 0 0 0;
 	}
 
-	.banner img{
-		margin-top: -7%;
+
+	.bannerHoverSmall p{
+		font-size: 10px;
+	}
+
+	.banner:hover .bannerHoverSmall {
+		margin: 18px 0 0 0;
 	}
 
 	.projectLabel {
@@ -381,29 +534,29 @@ a:hover {
     @media only screen and (max-width : 320px) {
 
     .header img {
+    	margin-top: 9px;
+		max-width: 55px;
+	}
+		
+    .fixed img {
     	margin-top: 14px;
 		max-width: 40px;
-
 	}
 
     .nav {
-		width: 83%;
+		width: 80%;
 		padding-top: 33px;
 		float:right;
 	}
 
 	.nav a
 	{
-	  	margin-left: 11px;
+	  	margin-left: 15px;
 		font-size: 12px;
 	}
 
 	.bigImg{
 		height: 200px;
-	}
-
-	.bigImg img {
-		margin-top: -4%;
 	}
 
 	.grayscale {
@@ -424,16 +577,8 @@ a:hover {
 		margin-top: 0;
 		font-size: 11px;
 		letter-spacing: 1px;
-		background-color: rgba(255,255,255,0.5);
+		background-color: rgba(255,255,255,0.8);
 		padding: 8px;
-	}
-
-	.banner{
-		height: 140px;
-	}
-
-	.banner img{
-		margin-top: -7%;
 	}
 
 	.projectLabel {
@@ -447,18 +592,19 @@ a:hover {
 		margin-top: 0;
 		font-size: 13px;
 		letter-spacing: 1px;
-		background-color: rgba(255,255,255,0.5);
+		background-color: rgba(255,255,255,0.8);
 		padding: 8px;
 	}
 
 	.footer p {
 		font-size: 8px;
-		padding-top: 45px;
+		padding-top: 50px;
 	}
 
 	.footer img {
 		width: 30px;
 		height: auto;
+		padding-top: 50px;
 	}
         
 }	
