@@ -572,6 +572,11 @@ Modifies any hover effects to be mobile friendy */
 		height: 200px;
 	}
 
+	.bigImg:hover .bannerHover {
+		margin: 10px 0 0 0;
+		opacity: 1;
+	}
+
 	.grayscale {
 		filter: grayscale(0%);
 		-webkit-filter: grayscale(0%);
@@ -592,6 +597,13 @@ Modifies any hover effects to be mobile friendy */
 		letter-spacing: 1px;
 		background-color: rgba(255,255,255,0.8);
 		padding: 8px;
+	}
+	.bannerHoverSmall {
+		width: 150%;
+	}
+	.banner:hover .bannerHoverSmall {
+		margin: 10px 0 0 0;
+		opacity: 1;
 	}
 
 	.projectLabel {
