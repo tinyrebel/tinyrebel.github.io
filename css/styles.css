@@ -573,8 +573,13 @@ Modifies any hover effects to be mobile friendy */
 	}
 
 	.bigImg:hover .bannerHover {
-		margin: 10px 0 0 0;
-		opacity: 1;
+	margin: 10px 0 0 0;
+	opacity: 1;
+	}
+
+	.bigImg:focus .bannerHover {
+	margin: 10px 0 0 0;
+	opacity: 1;
 	}
 
 	.grayscale {
@@ -602,6 +607,11 @@ Modifies any hover effects to be mobile friendy */
 		width: 150%;
 	}
 	.banner:hover .bannerHoverSmall {
+		margin: 10px 0 0 0;
+		opacity: 1;
+	}
+
+	.banner:focus .bannerHoverSmall {
 		margin: 10px 0 0 0;
 		opacity: 1;
 	}
