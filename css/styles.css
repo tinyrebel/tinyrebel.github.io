@@ -8,17 +8,22 @@ ul {
 
 /* overall type settings */
 body {
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Work Sans', sans-serif;
 	font-weight: 400;
 }
 
 a {
-	color: #2d2d2d;
+	color: #000;
 }
 
 a:hover {
 	text-decoration: none;
 	color: #828282;
+	-webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
 }
 
 
@@ -26,13 +31,13 @@ a:hover {
 /* header + header logo */
 .header {
 	width: 100%;
-	height: 120px;
-	background-color: #f8f8f8;
-	padding-top: 20px;
+	height: 80px;
+	/*background-color: #f8f8f8;*/
+	padding-top: 18px;
 	position: fixed;
 	top: 0;
 	z-index: 9999; /*fixed header*/
-
+	background-color: #fff;
 	-webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -ms-transition: all 0.4s;
@@ -41,8 +46,9 @@ a:hover {
 }
 
 .header img {
-	margin-top: -10px;
-	max-height: 100px;
+	margin-top: 0px;
+	max-height: 40px;
+	max-width: 72px;
 	-webkit-transition: all 0.4s;
     -moz-transition: all 0.4s;
     -ms-transition: all 0.4s;
@@ -55,7 +61,7 @@ a:hover {
 {
 	width: 75%;
 	float:right;
-	padding-top: 25px;
+	padding-top: 10px;
 	/*border: 1px solid #000;*/
 }
 
@@ -68,10 +74,11 @@ a:hover {
 }
 
 .nav a {
+	font-weight: 400;
 	display: block;
 	margin-left: 55px;
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 15px;
 	letter-spacing: 1px;
 }
 
@@ -81,9 +88,9 @@ a:hover {
 	
 /* full screen width image banner*/
 .bigImg{
-	margin-top: 120px;
-	height: 450px;
-	margin-bottom: 30px;
+	/*margin-top: 80px;*/
+	height: 730px;
+	margin-bottom: 40px;
 	background-image: url(../images/jumbotron.jpg); 
 	background-position: center center;
 	background-size: cover;
@@ -97,7 +104,7 @@ a:hover {
 /* banner hover - project description + link */
 .bannerHover {
 	position: absolute;
-	top: 0;
+	top: 80px;
 	right: 0;
 	left: 0;
 	bottom: 0;
@@ -116,7 +123,7 @@ a:hover {
 }
 
 .bannerHover a {
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 9px;
 	letter-spacing: 1px;
@@ -130,14 +137,16 @@ a:hover {
 /* images linking to gallery view */
 .galleryType {
 	overflow:hidden;
-	margin-bottom: 15px;
+	/*margin-bottom: 20px;*/
+	
 }
 
 .galleryType img {
 	max-height: 500px;
 	display: block;
 	margin: 0 auto;
-	margin-bottom: 15px;
+	margin-bottom: 40px;
+	padding: 12px;
 }
 
 /* grayscale hover effect */
@@ -167,6 +176,7 @@ a:hover {
 	background-color: rgba(255,255,255,0.8);
 	margin: 40px;
 	margin-top: 25px;
+	margin-bottom: 65px;
 
 	transition:all .4s ease-in-out;    
     -webkit-transition:all .4s ease-in-out;
@@ -176,8 +186,8 @@ a:hover {
 
 .galleryLabel h1 {
 	text-transform: uppercase;
-	font-size: 20px;
-	letter-spacing: 2px;
+	font-size: 15px;
+	letter-spacing: 1px;
 	text-align: center;
 	color: #000;
 	margin-top: 70%;
@@ -190,7 +200,7 @@ a:hover {
 /* secondary banner image - without margins */
 .banner{
 	background-color: #b1ddea;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 .banner img{
@@ -219,7 +229,7 @@ a:hover {
 }
 
 .bannerHoverSmall a {
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 9px;
 	letter-spacing: 1px;
@@ -237,6 +247,7 @@ a:hover {
 
 .projectType img {
 	margin-bottom: 15px;
+	padding: 12px;
 }
 
 /* text hover effects */
@@ -260,7 +271,7 @@ a:hover {
 
 .projectLabel h1 {
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 15px;
 	letter-spacing: 2px;
 	text-align: center;
 	color: #000;
@@ -303,25 +314,26 @@ a:hover {
 
 /*fixed header css for jquery transiton */
 .fixed{
-	height: 80px;
+	height: 60px;
 	position: fixed;
 	top: 0;
-	padding-top: 0;
+	padding-top: 10px;
 	z-index: 9999; 
 }
 
 .fixed img {
-	margin-top: 7px;
-	max-height: 65px;
+	margin-top: 3px;
+	max-height: 30px;
+	max-width: 54px;
 }
 
 /* PROJECT PAGE */
 .first {
-	margin-top: 150px;
+	margin-top: 80px;
 }
 
 .project-main {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 .fillscreen {
@@ -330,13 +342,17 @@ a:hover {
 }
 
 .project-square {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
+}
+
+.project-square img {
+	padding: 12px 12px 12px 0px;
 }
 
 .project-square h2 {
 	text-transform: uppercase;
-	font-size: 20px;
-	letter-spacing: 2px;
+	font-size: 15px;
+	letter-spacing: 1px;
 	text-align: center;
 	color: #000;
 	padding-top: 30px;
@@ -381,7 +397,7 @@ a:hover {
 
 /* 'FAKE' GALLERY PAGE' */
  .mockup {
- 	margin-top: 120px;
+ 	margin-top: 80px;
  	margin-bottom: 30px;
  }
 
@@ -392,7 +408,7 @@ a:hover {
 @media only screen and (max-width : 1200px) {
 
 	.galleryLabel h1 {
-		font-size: 16px;
+		font-size: 13px;
 	}
 
 }
@@ -416,7 +432,7 @@ a:hover {
 	}
 
 	.projectLabel h1 {
-		font-size: 16px;
+		font-size: 13px;
 	}
 
 }
@@ -440,7 +456,7 @@ a:hover {
 	.nav a
 	{
 	  	margin-left: 35px;
-		font-size: 16px;
+		font-size: 13px;
 	}
 
 	.bigImg{
