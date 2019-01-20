@@ -643,8 +643,8 @@ Modifies any hover effects to be mobile friendy */
 	}
 
 	.footer img {
-		width: 30px;
-		height: auto;
+		max-width: 15px;
+		max-height: 15px;
 		padding-top: 50px;
 	}
         
